@@ -15,6 +15,9 @@ class CreateUserbalanceTable extends Migration
     {
         Schema::create('userbalance', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->string('sender_ids')->nullable();
+            $table->float('amount');
             $table->timestamps();
         });
     }
