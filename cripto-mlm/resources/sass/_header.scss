@@ -1,0 +1,157 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block; margin: 0; padding: 0;}
+* {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, form {margin: 0; padding: 0; list-style: none; font-weight: normal;}
+button, input, select, textarea {margin: 0; padding: 0; border: none; font-family: 'Poppins', sans-serif;}
+.custfield:focus {outline: none; border: none; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
+body {font-family: 'Poppins', sans-serif; font-size: 14px; color: #000000;}
+a {text-decoration: none;}
+a:hover, a:focus {text-decoration: none; outline: none;}
+img {border: none; vertical-align: middle;}
+
+/****************
+ * Common Css
+ ****************/
+.container {max-width: 1200px;}
+.custfield {border: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
+a, a:hover, button {transition:all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -webkit-transition:all 0.3s ease 0s;}
+.ctitle {position: relative; padding-bottom: 40px;}
+.ctitle h3 {color: #0000d6; font-size: 40px; font-family: 'Roboto Slab', serif; font-weight: 700;}
+.ctitle h3 span {display: block; color: #ff3773;}
+
+header {background-color: #0000d6;}
+header .header {border-bottom: 1px solid #6c6cff; padding: 10px 0px;}
+header .rmenu nav {display: inline-flex; justify-content: space-around; width: 100%; margin-top: 12px;}
+header .rmenu nav ul {display: inline-block; margin: 0;}
+header .rmenu nav ul li {display: inline-block; padding: 9px 13px;}
+header .rmenu nav ul li a {color: #ffffff; font-size: 18px;}
+header .rmenu nav ul li a:hover {color: #ff3773;}
+header .rmenu nav .getbtn {float: right; text-transform: uppercase; margin-top: 2px; padding: 9px 36px; color: #ffffff; font-size: 18px; font-weight: 600; border:1px solid #ffffff; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+header .rmenu nav .getbtn:hover {background-color:#ff3773; border-color: #ff3773;}
+
+
+.topbanner {background-color: #0000d6; padding-bottom: 45px;}
+.topbanner .textinfo {padding-top: 29px;}
+.topbanner .textinfo h3 {font-family: 'Roboto Slab', serif; color: #ffff00; font-size: 37px; font-weight: 700; padding-bottom:30px;}
+.topbanner .textinfo p {color: #ffff00; font-size: 24px; font-weight: 700; line-height: 38px;}
+.topbanner .textinfo p span {font-size: 32px; line-height: 40px;}
+.logo-banner {width:100%; text-align:center; margin-bottom: 25px; margin-top: 15px;}
+.logo-banner img {max-width: 100%;}
+
+.video iframe {width: 582px; height: 400px;}
+
+.section-h2 {background-image: url(../images/bg1.jpg); background-repeat: no-repeat; background-position: 0px 0px;}
+.section-h2 .sbox .sinner {background-color: #ffffff; min-height: 570px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 20px; position: relative;} 
+.section-h2 .sbox .sinner h5 {width: 100%; text-align: center; padding: 10px 0px 20px; font-size: 28px; font-weight: 700; border-bottom: 1px solid #dddddd; color: #6228b1; font-family: 'Roboto Slab', serif; margin-bottom: 20px; }
+.section-h2 .sbox .sinner .morebtn {color: #ff3773;  position: absolute; left: 50%; transform: translateX(-50%); bottom: 30px; font-size: 16px; font-weight: 600; text-transform: uppercase; width: 148px; height:46px;  line-height: 45px; border:1px solid #ff3773; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-align: center; margin-top: 15px;}
+.section-h2 .sbox .sinner .morebtn:hover {background-color: #ff3773; color: #ffffff;}
+.section-h2 .sbox1 ul {text-align: left; width: 100%;}
+.section-h2 .sbox1 ul li {font-size: 18px; color: #2f2f2f; padding-left: 30px; background-image: url(../images/right.png); background-repeat: no-repeat; background-position: 0px 0px; margin-bottom: 10px;}
+.section-h2 .sbox3 p {color: #2f2f2f; font-size: 18px; padding-top: 20px;}
+.section-h2 .sbox .sinner:hover {box-shadow: 0px 0px 16px rgba(0,0,0,0.1);}
+.section-h2 .sbox3 .income-class {font-size: 22px; line-height: 32px;}
+.footer {background-color: #0000d6;}
+.footer p {color: #ffffff; font-size: 15px;}
+
+/** Login Page **/
+.loginconts {background: url(../images/bg2.jpg) no-repeat 50% 0; background-size: cover; position: relative; padding: 85px 0; height: 700px; position: relative;}
+.loginconts:after {content: ""; width: 100%; top: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.40); position: absolute;}
+.cform {width: 570px; margin: 0 auto; background-color: #ffffff; clear: both; z-index: 2; position: relative;}
+.cform h4 {background-color: #0000d6; font-size: 26px; color: #ffffff; font-weight: 700; text-transform: uppercase; padding: 15px 30px;}
+.cform form {padding: 25px 30px;}
+.cform .fieldrow {margin-bottom: 8px;}
+.cform .fieldrow label {font-size: 22px; color: #2f2f2f; font-weight: normal; margin-bottom: 2px;}
+.cform .fieldrow .custfield {height: 50px; border: 1px solid #dddddd; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px;}
+.cbtn {display: inline-block; background-color: #ff3773; font-size: 16px; font-weight: 600; text-transform: uppercase; color: #ffffff; width: 148px; height: 46px; line-height: 46px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.cbtn:hover {background-color: #0000d6;}
+
+.reg-cbtn {display: inline-block; background-color: #ff3773; font-size: 16px; font-weight: 600; text-transform: uppercase; color: #ffffff; width: 115px; height: 49px; line-height: 46px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.reg-cbtn:hover {background-color: #0000d6;}
+
+
+.reg-cbtn1 {display: inline-block; background-color: #ff3773; font-size: 16px; font-weight: 600; text-transform: uppercase; color: #ffffff; width: 115px; height: 49px; line-height: 46px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-align:center; margin: 0px !important;}
+.reg-cbtn1:hover {background-color: #0000d6; color:#fff;}
+
+
+.fielbtn {padding:8px 0px 20px; width: 100%;}
+.fielbtn .forget {float: right; color: #2f2f2f; font-size: 22px; margin-top: 10px;}
+.fielbtn .forget:hover {color: #ff3773;}
+.loginbtn {width: 100%; padding-top: 20px; border-top:1px solid #dddddd;}
+.loginbtn a {display: inline-block; margin: 0px 0 0px 10px;}
+.loginbtn a:hover {opacity: 0.7;}
+
+/** Forgot Page **/
+.forgetconts {background: url(../images/bg3.jpg) no-repeat 50% 0; background-size: cover; position: relative; padding: 187px 0; height: 700px; position: relative;}
+.forgetconts:after {content: ""; width: 100%; top: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.40); position: absolute;}
+
+/** Register Page **/
+.registerconts {padding: 30px 0px;}
+.registerconts .regisinfo .imgbox {width: 100%; margin-bottom: 30px;}
+.registerconts .regisinfo .imgbox img {max-width: 100%;}
+.registerconts .regisinfo p {font-size: 18px; color: #2f2f2f; line-height: 28px;}
+.registerconts .regisfrom .cform {width: 100%;}
+.registerconts .regisfrom .cform form {padding: 0px;}
+.videobox {height: 323px; width: 100%; display: block; margin-bottom: 30px;}
+.customecher{display: flex; margin: 15px 0 5px 0; }
+.customecher p{ font-size: 15px; font-weight:normal; color: #222; line-height: 22px; margin: 0;}
+.customecher p a{color: #ff3773; font-weight: 600;}
+.cnt-frms .btn-main{ border: none;margin: 40px auto 0;display: table;width: auto;}
+.custchec .styled-checkbox {position: absolute;opacity: 0;}
+.custchec .styled-checkbox + label {position: relative;cursor: pointer;padding: 0;}
+.custchec .styled-checkbox + label:before {content: '';margin-right: 10px;display: inline-block;vertical-align: text-top;width: 20px;height: 20px;background: #f3f3f3;border: 1px solid #e1e1e1;}
+.custchec .styled-checkbox:checked + label:before {
+  background: #ff3773;
+}
+.custchec .styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.custchec .styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.custchec .styled-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.pink-color {color:#ff3773;}
+.register-title {width:100%; text-align:left; color:#0000d6; margin-bottom: 20px;}
+
+/** Terms **/
+.terms p {width:100%; margin-bottom: 24px;}
+
+/** Footer 2 **/
+.footer2 {border-top: 1px solid #000000;}
+
+
+.input-group > .intl-tel-input.allow-dropdown {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group > .intl-tel-input.allow-dropdown > .flag-container {
+	z-index: 4;
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+}
+.intl-tel-input {
+  width: 100%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+    }
+}
