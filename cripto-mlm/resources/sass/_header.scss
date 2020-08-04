@@ -5,7 +5,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, form {margin: 0; padding: 0;
 button, input, select, textarea {margin: 0; padding: 0; border: none; font-family: 'Poppins', sans-serif;}
 .custfield:focus {outline: none; border: none; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
 body {font-family: 'Poppins', sans-serif; font-size: 14px; color: #000000;}
-a {text-decoration: none;}
+a {text-decoration: none !important;}
 a:hover, a:focus {text-decoration: none; outline: none;}
 img {border: none; vertical-align: middle;}
 

@@ -130,7 +130,7 @@
 							</div>
 							<div class="fieldrow">
 								<label>Re-Type Password : <span class="pink-color">*</span></label>
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" type="password" class="form-control custfield" name="password_confirmation" required autocomplete="new-password">
 							</div>
 							<div class="customecher">
                                     <div class="custchec">

@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{url('css/bootstrap.min.css')}}">
 </head>

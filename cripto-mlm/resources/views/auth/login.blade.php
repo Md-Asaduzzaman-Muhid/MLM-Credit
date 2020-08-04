@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +69,38 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<section class="loginconts">
+		<div class="container">
+			<div class="cform">
+				<h4>Login</h4>
+				<form  method="POST" action="{{ route('login') }}">
+                    @csrf
+
+					<div class="fieldrow">
+						<label>Emails :</label>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror custfield" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+					</div>
+					<div class="fieldrow">
+						<label>Pasword :</label>
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror custfield" name="password" required autocomplete="current-password">
+					</div>
+					<div class="fielbtn">
+                        <button type="submit" class="cbtn">
+                            {{ __('Login') }}
+                        </button>
+                        @if (Route::has('password.request'))
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                {{ __('Forgot Password?') }}
+                            </a>
+                        @endif
+					</div>
+					<div class="loginbtn">
+						<a class="reg-cbtn1" href="/register">Register</a><a class="loginfb" href="#"><img src="images/fblogin.png" alt=""/></a><a class="ligingoogle" href="#"><img src="images/googlelogin.png" alt=""/></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
 @endsection

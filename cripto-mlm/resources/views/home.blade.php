@@ -41,7 +41,7 @@
 							Campaign to Build Your 
 							Business.</li>
 						</ul>
-						<a class="morebtn" href="register.html">Learn More</a>
+						<a class="morebtn" href="/register">Learn More</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-12 text-center sbox sbox2" id="product">
@@ -52,7 +52,7 @@
 								<img class="img-fluid" src="images/sbox2.png" alt=""/>
 							</figure>
 						</div>
-						<a class="morebtn" href="register.html">Learn More</a>
+						<a class="morebtn" href="/register">Learn More</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-12 text-center sbox sbox3" id="income">
@@ -64,7 +64,7 @@
 							</figure>
 						</div>
 						<p class="income-class">Powerful New<br>High Residual<br>Proprietary<br>Compensation Plan</p>
-						<a class="morebtn" href="register.html">Learn More</a>
+						<a class="morebtn" href="/register">Learn More</a>
 					</div>
 				</div>
 			</div>
