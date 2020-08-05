@@ -7,10 +7,11 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    //
-    // public function list()
-    // {
-    //     $users = User::all();
-    //     return view('admin.home')->with('users',$users);
-    // }
+    
+    public function refer($id)
+    {
+        $user = User::find($id);
+        dd($user);
+        return back();
+    }
 }
