@@ -97,7 +97,9 @@
                         @endif
 					</div>
 					<div class="loginbtn">
-						<a class="reg-cbtn1" href="/register">Register</a><a class="loginfb" href="#"><img src="images/fblogin.png" alt=""/></a><a class="ligingoogle" href="#"><img src="images/googlelogin.png" alt=""/></a>
+						<a class="reg-cbtn1" href="/register">Register</a>
+                        <a class="loginfb" href="{{ route('social.oauth', 'facebook') }}"><img src="images/fblogin.png" alt="facebook"/></a>
+                        <a class="ligingoogle" href="{{ route('social.oauth', 'google') }}"><img src="images/googlelogin.png" alt="google"/></a>
 					</div>
 				</form>
 			</div>
