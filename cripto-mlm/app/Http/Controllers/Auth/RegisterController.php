@@ -65,13 +65,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $site_url= URL::to('/');
+        $user =  User::create([
             'fname' => $data['fname'],
             'lname' => $data['lname'],
             'phone' => $data['phone'],
-            'username' => $data['fname'],
+            
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+    
         ]);
+    
+        $id= $user->id; // Get current user id
+        User::where('id', $id)
+        ->update(['username' => $user['fname'].'_'.$id , 'refer_url' => strval($site_url) . '/?ref=' . $user['fname'].'_'.$id]);
+
+        return $user;
     }
 }
