@@ -133,12 +133,17 @@
                                 <input id="password-confirm" type="password" class="form-control custfield" name="password_confirmation" required autocomplete="new-password">
 							</div>
 							<div class="customecher">
-                                    <div class="custchec">
-                                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
-                                        <label for="styled-checkbox-1"></label>
-                                    </div>
-                                    <p><a href="terms.html">Terms and Conditions</a></p>
+                                <div class="custchec">
+                                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                    <label for="styled-checkbox-1"></label>
                                 </div>
+                                <p><a href="terms.html">Terms and Conditions</a></p>
+                            </div>
+                            @if (isset($username))
+                            <input type="hidden" name="parent" value= {{$username}}>
+                            @else
+                            <input type="hidden" name="parent" value='0_0'>
+                            @endif
 							<div class="fielbtn">
 								<button type="submit" class="cbtn">Submit</button>
 							</div>

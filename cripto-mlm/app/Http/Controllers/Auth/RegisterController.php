@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\URL;
 
 class RegisterController extends Controller
 {
@@ -65,20 +66,26 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        
+//  dd($data);
         $site_url= URL::to('/');
         $user =  User::create([
             'fname' => $data['fname'],
             'lname' => $data['lname'],
             'phone' => $data['phone'],
-            
+            'parent' => $data['parent'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
     
         ]);
-    
+        $parent_id = explode("_", $data['parent']);
+        //print_r($strArr);
+        if(count($parent_id) == 2){
+            $parent_id = $parent_id[1];
+        }
         $id= $user->id; // Get current user id
         User::where('id', $id)
-        ->update(['username' => $user['fname'].'_'.$id , 'refer_url' => strval($site_url) . '/?ref=' . $user['fname'].'_'.$id]);
+        ->update(['username' => $user['fname'].'_'.$id , 'refer_url' => strval($site_url) . '/register/ref=' . $user['fname'].'_'.$id , 'parent' =>$parent_id]);
 
         return $user;
     }

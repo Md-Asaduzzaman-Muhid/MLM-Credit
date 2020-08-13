@@ -8,10 +8,19 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     
-    public function refer($id)
+    public function refer($username)
     {
-        $user = User::find($id);
-        dd($user);
-        return back();
+        
+        return view('auth.register')->with('username', $username);
+    }       
+    public function store(Request $request)
+    {
+        $strArr = explode("_", $username);
+        //print_r($strArr);
+        if(count($strArr) == 2){
+            echo $strArr[1];
+        }else{
+            echo $username;
+        }
     }
 }
